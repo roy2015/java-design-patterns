@@ -93,7 +93,6 @@ public class App {
 
   private void promiseUsage() {
     calculateLineCount();
-
     calculateLowestFrequencyChar();
   }
 
@@ -152,6 +151,7 @@ public class App {
    * This is an async method and does not wait until the file is downloaded.
    */
   private Promise<String> download(String urlString) {
+    //promise <- promiseSupport <- future
     return new Promise<String>()
         .fulfillInAsync(
             () -> Utility.downloadFile(urlString), executor)

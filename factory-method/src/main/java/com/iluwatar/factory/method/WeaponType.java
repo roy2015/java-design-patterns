@@ -32,9 +32,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum WeaponType {
 
-  SHORT_SWORD("short sword"),
-  SPEAR("spear"),
-  AXE("axe"),
+  SHORT_SWORD("short sword"),//匕首
+  SPEAR("spear"),//矛
+  AXE("axe"),//斧子
   UNDEFINED("");
 
   private final String title;

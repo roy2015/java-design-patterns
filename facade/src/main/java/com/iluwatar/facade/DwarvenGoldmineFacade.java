@@ -43,9 +43,9 @@ public class DwarvenGoldmineFacade {
    */
   public DwarvenGoldmineFacade() {
     workers = List.of(
-        new DwarvenGoldDigger(),
-        new DwarvenCartOperator(),
-        new DwarvenTunnelDigger());
+        new DwarvenGoldDigger(),//掘金工
+        new DwarvenCartOperator(),//拖拉机手
+        new DwarvenTunnelDigger());//隧道工
   }
 
   public void startNewDay() {

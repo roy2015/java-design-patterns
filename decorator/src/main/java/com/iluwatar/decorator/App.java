@@ -27,13 +27,13 @@ package com.iluwatar.decorator;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * The Decorator pattern is a more flexible alternative to subclassing. The Decorator class
+ * The Decorator pattern is a more flexible alternative to subclassing（装饰器模式比继承更灵活）. The Decorator class
  * implements the same interface as the target and uses composition to "decorate" calls to the
  * target. Using the Decorator pattern it is possible to change the behavior of the class during
  * runtime.
  *
- * <p>In this example we show how the simple {@link SimpleTroll} first attacks and then flees the
- * battle. Then we decorate the {@link SimpleTroll} with a {@link ClubbedTroll} and perform the
+ * <p>In this example we show how the simple {@link SimpleTroll} （troll:巨怪） first attacks and then flees(逃离) the
+ * battle. Then we decorate the {@link SimpleTroll} with a {@link ClubbedTroll} （棍棒状怪物）and perform the
  * attack again. You can see how the behavior changes after the decoration.
  */
 @Slf4j
@@ -48,14 +48,14 @@ public class App {
 
     // simple troll
     LOGGER.info("A simple looking troll approaches.");
-    var troll = new SimpleTroll();
+    Troll troll = new SimpleTroll();
     troll.attack();
     troll.fleeBattle();
     LOGGER.info("Simple troll power: {}.\n", troll.getAttackPower());
 
     // change the behavior of the simple troll by adding a decorator
     LOGGER.info("A troll with huge club surprises you.");
-    var clubbedTroll = new ClubbedTroll(troll);
+    Troll clubbedTroll = new ClubbedTroll(troll);
     clubbedTroll.attack();
     clubbedTroll.fleeBattle();
     LOGGER.info("Clubbed troll power: {}.\n", clubbedTroll.getAttackPower());

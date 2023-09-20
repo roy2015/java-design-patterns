@@ -29,8 +29,14 @@ package com.iluwatar.bridge;
  */
 public interface Weapon {
 
+  /**
+   * 使用
+   */
   void wield();
 
+  /**
+   * 朝......打去
+   */
   void swing();
 
   void unwield();
