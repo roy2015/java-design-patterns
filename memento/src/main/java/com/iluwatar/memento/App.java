@@ -27,7 +27,7 @@ package com.iluwatar.memento;
 import java.util.Stack;
 import lombok.extern.slf4j.Slf4j;
 
-/**
+/**备忘录模式
  * The Memento pattern is a software design pattern that provides the ability to restore an object
  * to its previous state (undo via rollback).
  *

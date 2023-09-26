@@ -24,7 +24,7 @@
  */
 package com.iluwatar.state;
 
-/**
+/**状态模式
  * In the State pattern, the container object has an internal state object that defines the current
  * behavior. The state object can be changed to alter the behavior.
  *

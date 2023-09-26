@@ -27,7 +27,7 @@ package com.iluwatar.interpreter;
 import java.util.Stack;
 import lombok.extern.slf4j.Slf4j;
 
-/**
+/**解释器模式
  * The Interpreter pattern is a design pattern that specifies how to evaluate sentences in a
  * language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a
  * specialized computer language. The syntax tree of a sentence in the language is an instance of

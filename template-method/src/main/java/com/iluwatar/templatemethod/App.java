@@ -24,7 +24,7 @@
  */
 package com.iluwatar.templatemethod;
 
-/**
+/**模板方法模式
  * Template Method defines a skeleton for an algorithm. The algorithm subclasses provide
  * implementation for the blank parts.
  *

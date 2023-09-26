@@ -26,7 +26,7 @@ package com.iluwatar.prototype;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
+/**原型模式
  * The Prototype pattern is a creational design pattern in software development. It is used when the
  * type of objects to create is determined by a prototypical instance, which is cloned to produce
  * new objects. This pattern is used to: - avoid subclasses of an object creator in the client

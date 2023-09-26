@@ -26,7 +26,7 @@ package com.iluwatar.bridge;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
+/**桥接模式
  * Composition over inheritance. The Bridge pattern can also be thought of as two layers of
  * abstraction. With Bridge, you can decouple an abstraction from its implementation so that the two
  * can vary independently.
